@@ -1,0 +1,37 @@
+/*
+*
+* @package Fixed footer navbar
+* @author dmzx (www.dmzx-web.net)
+* @copyright (c) 2014 by dmzx (www.dmzx-web.net)
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* 
+*/
+
+#page-footer .navbar {
+   display: none;
+}
+
+#wrap {
+	margin: 14px auto;
+}
+
+#footer-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#footer-container {
+    height: auto px;
+    background: #8cc;
+}
+
+#footer {
+    width: auto px;
+    margin: 0 5px 0 5px;
+    padding-top: auto px;
+    color: #466;
+    position: relative;
+}

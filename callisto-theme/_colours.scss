@@ -1,0 +1,255 @@
+// Forum Icon Replacement Default Colors
+$forumicon-background-color-1:				#ECBC2E !default;
+$forumicon-background-color-2:				#ECDB2E !default;
+$forumicon-background-color-3:				#5D2AA0 !default;
+$forumicon-background-color-4:				#3434A5 !default;
+$forumicon-letter-color:				#FFFFFF !default;
+
+ul.topiclist li.row{
+	&:nth-child(1n+0) .rt_post_avatar.noavatar img {background-color: $forumicon-background-color-1;}
+	&:nth-child(2n+0) .rt_post_avatar.noavatar img {background-color: $forumicon-background-color-2;}
+	&:nth-child(3n+0) .rt_post_avatar.noavatar img {background-color: $forumicon-background-color-3;}
+	&:nth-child(4n+0) .rt_post_avatar.noavatar img {background-color: $forumicon-background-color-4;}
+}
+
+
+.panel.bg3, #tabs .activetab > a {
+	background-color: darken($main-background, 9%);
+}
+.panel-container .panel, #navigation #active-subsection a {
+	background-color: $main-background;
+}
+
+#showcase {
+	a {
+		color: $white;
+	}
+}
+
+.small-icon:before, .imageset:before, .file-status:before, .mark_read:before, .top2:before {
+	font: normal normal normal 14px/1 FontAwesome;
+	text-align: center;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	position: absolute;
+	color: $main-text-color;
+}
+
+.icon-acp:before					{ content: "\f085"; }
+.icon-bookmark:before				{ content: "\f02e"; }
+.icon-bump:before					{ content: "\f164"; }
+.icon-timezone:before				{ content: "\2022"; }
+.icon-contact:before				{ content: "\f098"; }
+.icon-delete-cookies:before			{ content: "\f014"; }
+.icon-reset:before					{ content: "\f021"; }
+.icon-download:before				{ content: "\f019"; }
+.icon-faq:before					{   content: "\f00a"; }
+.icon-home:before					{ content: "\f1ea"; }
+.icon-logout:before					{ content: "\f011"; }
+.icon-mark:before					{ content: "\f00c"; }
+.icon-mcp:before					{ content: "\f0ad"; }
+.icon-members:before				{ content: "\f0c0"; }
+.icon-notification:before			{ content: "\f022"; }
+.icon-pages:before					{ content: "\f0c5"; }
+.icon-pm:before						{ content: "\f0e0"; }
+.icon-presets:before				{ content: "\f1fc"; }
+.icon-presets {display:none !important;}
+.icon-print:before					{ content: "\f02f"; }
+.icon-profile:before				{ content: "\f007"; }
+.icon-register:before				{ content: "\f007"; }
+.icon-search:before, .responsive-search a:before	{ content: "\f002"; }
+.icon-search-active:before			{ content: "\f15c"; }
+.icon-search-advanced:before		{ content: "\f013"; }
+.icon-search-new:before				{ content: "\f15c"; }
+.icon-search-self:before			{ content: "\f15c"; }
+.icon-search-unanswered:before		{ content: "\f15c"; }
+.icon-search-unread:before			{ content: "\f15c"; }
+.icon-sendemail:before				{ content: "\f003";}
+.icon-subscribe:before				{ content: "\f0fe"; }
+.icon-team:before					{ content: "\f03a"; }
+.icon-ucp:before					{ content: "\f0f0"; }
+.icon-unsubscribe:before			{ content: "\f146";}
+
+li {
+	&.previous {margin-right: 10px;}
+	&.next, &.previous {
+		a:before {
+			font: normal normal normal 14px/1 FontAwesome;
+			text-rendering:auto;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+			position: absolute;
+		}
+	}
+	&.next a:before {content: "\f054";}
+	&.previous a:before {content: "\f053";}
+}
+
+div.rules {
+	strong {font-weight: bold;}
+	background-color: #ECD5D8;
+	color: #BC2A4D;
+}
+
+.file-status {
+	border-radius: 100%;
+	&:before {
+		margin-left: -6px;
+		padding-top: 3px;
+	}
+	&.file-uploaded {
+		background-color: $accent-color-1;
+		&:before {
+			content: "\f00c";
+		}
+	}
+	&.file-working {
+		background-color: $accent-color-1;
+		&:before {
+			content: "\f110";
+		}
+	}
+	&.file-error {
+		background-color: red;
+		&:before {
+			content: "\f00d";
+		}
+	}
+}
+
+.file-progress {
+	background-color: $base-text-color;
+}
+
+.file-progress-bar, #file-total-progress-bar {
+	background-color: $accent-color-1;
+}
+
+/* Table styles
+----------------------------------------*/
+table {
+	border: 0 none;
+}
+table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
+	background-color: darken($main-background, 8%);
+}
+
+table .bg2 {
+	background-color: darken($main-background, 8%);
+}
+
+table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
+	background-color: darken($main-background, 9%);
+}
+
+table.table1 thead th {
+	font-family: $font-family-title;
+	color: $main-background;
+	background: $accent-color-1;
+	vertical-align: middle;
+	text-transform: capitalize;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+	a {
+		color: $main-background;
+	}
+}
+
+table.table1 tbody tr {
+	border-color: darken($main-background, 8%);
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background-color: darken($main-background, 10%);
+}
+
+table.table1 tbody td {
+	font-family: $font-family-title;
+	border-top-color: darken($main-background, 8%);
+	border-color: darken($main-background, 8%);
+}
+
+table.table1 tbody th {
+	border-bottom-color: darken($main-background, 8%);
+}
+
+/* PM marking colours */
+.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
+	border-left-color: #BC2A4D;
+	border-right-color: #BC2A4D;
+}
+
+.pmlist li.pm_marked_colour, .pm_marked_colour {
+	border-color: #FF6600;
+}
+
+.pmlist li.pm_replied_colour, .pm_replied_colour {
+	border-color: #A9B8C2;
+}
+
+.pmlist li.pm_friend_colour, .pm_friend_colour {
+	border-color: #5D8FBD;
+}
+
+.pmlist li.pm_foe_colour, .pm_foe_colour {
+	border-color: #000000;
+}
+
+/* Code block */
+.codebox {
+	background-color: darken($main-background, 9%);
+	border-color: lighten($main-background, 9%);
+}
+
+code {
+	background-color: darken($main-background, 9%);
+	color: $main-text-color;
+}
+
+.codebox p {
+	border-color: darken($main-background, 9%);
+}
+
+.syntaxbg		{ color: #FFFFFF; }
+.syntaxcomment	{ color: #FF8000; }
+.syntaxdefault	{ color: #0000BB; }
+.syntaxhtml		{ color: #000000; }
+.syntaxkeyword	{ color: #007700; }
+.syntaxstring	{ color: #DD0000; }
+
+/* jQuery popups
+---------------------------------------- */
+.phpbb_alert {
+	background-color: darken($main-background, 8%);
+}
+#darken {
+	background-color: $black;
+}
+
+.dropdown-contents {
+	.small-icon:before, .imageset:before, .file-status:before, .mark_read:before {
+		color: $base-background;
+		margin-top: 3px;
+	}
+	.small-icon {
+		margin: 0 6px;
+
+		a {
+			&:hover {
+				color: darken($base-background, 15%);
+			}
+		}
+	}
+}
+
+.dropdown-contents {
+	background-color: $accent-color-1;
+	a {
+		color: $white;
+	}
+}
+
+.dropdown li.separator {
+	border-color: transparentize($white, 0.56);
+}
